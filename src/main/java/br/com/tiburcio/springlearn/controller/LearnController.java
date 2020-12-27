@@ -15,4 +15,9 @@ public class LearnController {
     public String others() {
         return "others";
     }
+
+    @GetMapping("/animals")
+    public String animals() {
+        return "animals";
+    }
 }
