@@ -17,4 +17,4 @@ cache:
     - $HOME/.gradle
 
 script:
-  - ./gradlew clean install
+  - gradle clean install
