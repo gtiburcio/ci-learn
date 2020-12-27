@@ -10,4 +10,9 @@ public class LearnController {
     public String hello() {
         return "hello world!";
     }
+
+    @GetMapping("/others")
+    public String others() {
+        return "others";
+    }
 }
