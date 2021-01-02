@@ -1,4 +1,4 @@
-FROM openjdk:11 AS TEMP_BUILD_IMAGE
+FROM openjdk:11
 
 COPY ./build/libs /home
 
