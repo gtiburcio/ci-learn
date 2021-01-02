@@ -24,12 +24,10 @@ jobs:
     - stage: clean and build
       script:
         - ./gradlew clean build
-    - stage: build docker image
+    - stage: build and push docker image
       script:
         - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
         - docker build -t ci-learn .
         - docker images
         - docker tag ci-learn $DOCKER_USERNAME/ci-learn
-    - stage: push docker image
-      script:
         - docker push $DOCKER_USERNAME/ci-learn
