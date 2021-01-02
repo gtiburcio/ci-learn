@@ -19,9 +19,6 @@ cache:
   directories:
     - $HOME/.gradle
 
-script:
-  - ./gradlew clean build
-
 jobs:
   include:
     - stage: clean and build
